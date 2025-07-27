@@ -8,50 +8,6 @@
 
     <style>
 
-        .why-container {
-            position: relative;
-            background: black url('assets/images/bg/bg1.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: 50% 50%;
-            padding: 30px 0;
-            color: white;
-            text-align: center;
-            font-family: Arial, sans-serif;
-        }
-
-        .why-we-were-born {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px;
-        }
-
-        .lg-title-black {
-            background: black;
-            display: inline-block;
-            padding: 20px 50px;
-            border-radius: 30px;
-            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.5);
-            font-size: 22px;
-            font-weight: bold;
-            margin-bottom: 30px;
-            color: white;
-        }
-
-        .why-we-were-born p {
-            line-height: 1.6;
-            font-size: 16px;
-            margin-bottom: 20px;
-            text-align: left;
-        }
-
-        .text-block {
-            text-align: justify;
-            max-width: 700px;
-            font-weight: bold;
-            color: white;
-        }
-
     </style>
 
 </head>
@@ -79,7 +35,7 @@
                 vừa đảm bảo triển khai hiệu quả là một thách thức.<br>
                 Chúng tôi ở đây để giải quyết điều đó.
             </p>
-            <a href="{{ site.baseurl }}/" class="contact-btn">
+            <a href="{{ site.baseurl }}/" class="contact-btn mt-4">
                 Contact us
             </a>
 
@@ -93,17 +49,96 @@
 <div class="why-container">
 
     <section class="why-we-were-born">
-        <h1 class="lg-title-black">WHY WE WERE BORN</h1>
-        <p class="text-block">Năm 2024, chúng tôi nhận ra một điều quen thuộc trên thị trường: các thương hiệu thường
-            phải làm việc với
-            nhiều agency khác nhau để có một chiến dịch trọn vẹn. Một agency sáng tạo cho ý tưởng, một agency khác lo về
-            chiến lược, một bên thứ ba phụ trách triển khai. Quá trình này rời rạc và thiếu đi sự nhất quán.</p>
-        <p class="text-block">Element Agency ra đời từ mong muốn tạo ra một mô hình tinh gọn và hiệu quả hơn. Chúng tôi
-            tin rằng sức mạnh
-            thực sự nằm ở sự kết hợp.</p>
-        <a href="{{ site.baseurl }}/" class="contact-btn">
-            Contact us
-        </a>
+        <h1 class="lg-title-black" style="margin-right: 80vh">WHY WE WERE BORN</h1>
+        <div class="mt-2" style="margin-left: 40vh">
+            <p class="text-block">Năm 2024, chúng tôi nhận ra một điều quen thuộc trên thị trường: các thương hiệu
+                thường
+                phải làm việc với
+                nhiều agency khác nhau để có một chiến dịch trọn vẹn. Một agency sáng tạo cho ý tưởng, một agency khác
+                lo về
+                chiến lược, một bên thứ ba phụ trách triển khai. Quá trình này rời rạc và thiếu đi sự nhất quán.</p>
+            <p class="text-block">Element Agency ra đời từ mong muốn tạo ra một mô hình tinh gọn và hiệu quả hơn. Chúng
+                tôi
+                tin rằng sức mạnh
+                thực sự nằm ở sự kết hợp.</p>
+        </div>
+        <div style="margin-top: 80px">
+            <a href="{{ site.baseurl }}/" class="contact-btn">
+                Contact us
+            </a>
+        </div>
+    </section>
+
+</div>
+
+
+<div class="partner-container">
+
+    <section class="partner-section">
+        <h1 class="lg-title-black">FOUR CORE STRENGTHS</h1>
+        <div>
+            <img src="assets/images/bg/bg-logo.png" alt="Element Logo" class="element-bg-image">
+        </div>
+        <div class="mt-2" style="margin-bottom: 70px">
+            <p class="text-block text-center" style="margin: 0 auto; max-width: 900px;">
+                Tên gọi 'Element' lấy cảm
+                hứng từ bốn nhà sáng lập và cũng là
+                bốn trụ cột trong phương
+                pháp làm
+                việc của chúng tôi. Mỗi người đại diện cho một 'nguyên tố' thiết yếu:</p>
+        </div>
+
+        <div class="row element-section">
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card custom-card"
+                     style="background-image: url('assets/images/element/fire.jpg');">
+                    <div class="card-overlay"></div>
+                    <div class="card-title-custom">FIRE</div>
+                    <div class="card-label">01 / Marketing</div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card custom-card"
+                     style="background-image: url('assets/images/element/water.jpg');">
+                    <div class="card-overlay"></div>
+                    <div class="card-title-custom">WATER</div>
+                    <div class="card-label">02 / Event & Communication</div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card custom-card"
+                     style="background-image: url('assets/images/element/earth.jpg');">
+                    <div class="card-overlay"></div>
+                    <div class="card-title-custom">EARTH</div>
+                    <div class="card-label">03 / Production</div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card custom-card"
+                     style="background-image: url('assets/images/element/wind.jpg');">
+                    <div class="card-overlay"></div>
+                    <div class="card-title-custom">AIR</div>
+                    <div class="card-label">04 / Technology</div>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 50px">
+            <a href="{{ site.baseurl }}/" class="contact-btn">
+                For more
+            </a>
+        </div>
+
+    </section>
+
+    <section>
+
     </section>
 
 </div>
