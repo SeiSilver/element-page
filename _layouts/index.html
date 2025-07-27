@@ -8,9 +8,35 @@
 
     <style>
 
-        .client-section {
-            width: 50%;
-            margin: 0 auto;
+        .stats-title {
+            font-size: 3rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .stat-button {
+            background-color: rgba(67, 114, 188, 0.6);
+            border: none;
+            color: white;
+            width: 180px;
+            border-radius: 25px;
+            padding: 20px 25px;
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .partner-logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: contain;
+            padding: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .partner-logo:hover {
+            transform: scale(1.1);
         }
 
     </style>
@@ -51,8 +77,8 @@
 <div class="why-container">
 
     <section class="why-we-were-born">
-        <h1 class="lg-title-black" style="margin-right: 80vh">WHY WE WERE BORN</h1>
-        <div class="mt-2" style="margin-left: 40vh">
+        <h1 class="lg-title-black">WHY WE WERE BORN</h1>
+        <div class="mt-2">
             <p class="text-block">Năm 2024, chúng tôi nhận ra một điều quen thuộc trên thị trường: các thương hiệu
                 thường
                 phải làm việc với
@@ -139,25 +165,63 @@
 
     </section>
 
-    <section class="client-section">
+    <section class="partner-section">
         <h1 class="xlg-title-black" style="margin-top: 100px;">OUR CLIENTS</h1>
         <div class="mt-2" style="margin-bottom: 70px">
             <p class="text-block text-center" style="margin: 0 auto; max-width: 900px;">
                 Trong năm 2025, chúng tôi đã hoàn thành
             </p>
         </div>
-        <div class="row">
-            <div class="col-6 col-sm-4 col-lg-3">
-                <img src="assets/images/clients/1.png" alt="Client 1" class="client-logo">
+        <div class="container">
+            <!-- Stats Row -->
+            <div class="row mb-5 justify-content-center">
+                <div class="mt-2 col-12 col-md-5">
+                    <h1 class="fw-bold display-6 stats-title">400+</h1>
+                    <button class="stat-button">Dự án</button>
+                </div>
+                <div class="mt-2 col-12 col-md-5">
+                    <h1 class="fw-bold display-6 stats-title">50+</h1>
+                    <button class="stat-button">Khách hàng</button>
+                </div>
             </div>
-            <div class="col-6 col-sm-4 col-lg-3">
-                <img src="assets/images/clients/2.png" alt="Client 2" class="client-logo">
-            </div>
-            <div class="col-6 col-sm-4 col-lg-3">
-                <img src="assets/images/clients/3.png" alt="Client 3" class="client-logo">
-            </div>
-            <div class="col-6 col-sm-4 col-lg-3">
-                <img src="assets/images/clients/4.png" alt="Client 4" class="client-logo">
+
+            <div class="row justify-content-center g-4">
+                <div class="col-6 col-sm-6 col-md-3 col-lg-2">
+                    <img src="assets/images/client/viettel-money.png" alt="viettel" class="partner-logo mx-auto d-block">
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-2">
+                    <img src="assets/images/client/vff.png" alt="vff" class="partner-logo mx-auto d-block">
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-2">
+                    <img src="assets/images/client/yadea.jpg" alt="yadea" class="partner-logo mx-auto d-block">
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-2">
+                    <img src="assets/images/client/seabank.png" alt="seabank" class="partner-logo mx-auto d-block">
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-2">
+                    <img src="assets/images/client/pvcombank.png" alt="pvcombank" class="partner-logo mx-auto d-block">
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-2">
+                    <img src="assets/images/client/xiaomi.png" alt="xiaomi" class="partner-logo mx-auto d-block">
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-2">
+                    <img src="assets/images/client/vtv7.png" alt="vtv7" class="partner-logo mx-auto d-block">
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-2">
+                    <img src="assets/images/client/sony-music.png" alt="sony" class="partner-logo mx-auto d-block">
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-2">
+                    <img src="assets/images/client/toto.png" alt="toto" class="partner-logo mx-auto d-block">
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-2">
+                    <img src="assets/images/client/htc-itc.png" alt="htc" class="partner-logo mx-auto d-block">
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-2">
+                    <img src="assets/images/client/vtv-cab-news.png" alt="vtvcab" class="partner-logo mx-auto d-block">
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-2">
+                    <img src="assets/images/client/panasonic.png" alt="panasonic" class="partner-logo mx-auto d-block">
+                </div>
             </div>
         </div>
 
