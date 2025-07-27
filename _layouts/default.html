@@ -3,13 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/styles.css">
+    {% include common-css.html %}
+    <style>
+        body {
+            background: linear-gradient(to right, #e0eafc, #cfdef3);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .notice-box {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
-<body>
+<body data-topbar="dark" data-layout="horizontal">
 {% include header.html %}
-<main>
-    {{ content }}
-</main>
-{% include footer.html %}
+
+<div class="notice-box">
+    <img src="https://cdn-icons-png.flaticon.com/512/5957/5957337.png" alt="under construction"
+         style="width: 100px; margin-bottom: 20px;">
+    <h1>Trang đang được phát triển</h1>
+    <p class="mt-3">Vui lòng quay lại sau. Cảm ơn bạn đã ghé thăm!</p>
+    <a href="{{ site.baseurl }}/" class="btn btn-primary mt-4">Quay lại trang chủ</a>
+</div>
+
 </body>
+
+{% include common-js.html %}
 </html>
