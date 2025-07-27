@@ -113,6 +113,19 @@
     color: white;
 }
 
+.xlg-title-black {
+    background: rgba(0, 0, 0, 0.4);
+    display: inline-block;
+    padding: 20px 50px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.3);
+    font-size: 25px;
+    font-weight: 900;
+    width: 500px;
+    margin-bottom: 30px;
+    color: white;
+}
+
 .why-we-were-born p {
     line-height: 1.6;
     font-size: 16px;
