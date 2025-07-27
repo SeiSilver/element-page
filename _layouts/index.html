@@ -26,15 +26,16 @@
             padding: 40px;
         }
 
-        .title {
+        .lg-title-black {
             background: black;
             display: inline-block;
-            padding: 15px 30px;
+            padding: 20px 50px;
             border-radius: 30px;
-            box-shadow: 0 0 20px #000000aa;
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.5);
             font-size: 22px;
             font-weight: bold;
             margin-bottom: 30px;
+            color: white;
         }
 
         .why-we-were-born p {
@@ -42,25 +43,6 @@
             font-size: 16px;
             margin-bottom: 20px;
             text-align: left;
-        }
-
-        .contact-button {
-            margin-top: 20px;
-            padding: 12px 30px;
-            background: black;
-            border: none;
-            border-radius: 15px;
-            color: white;
-            font-weight: bold;
-            font-size: 16px;
-            box-shadow: 0 0 10px #444;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .contact-button:hover {
-            background: #222;
-            box-shadow: 0 0 15px #777;
         }
 
         .text-block {
@@ -111,7 +93,7 @@
 <div class="why-container">
 
     <section class="why-we-were-born">
-        <h2 class="title">WHY WE WERE BORN</h2>
+        <h1 class="lg-title-black">WHY WE WERE BORN</h1>
         <p class="text-block">Năm 2024, chúng tôi nhận ra một điều quen thuộc trên thị trường: các thương hiệu thường
             phải làm việc với
             nhiều agency khác nhau để có một chiến dịch trọn vẹn. Một agency sáng tạo cho ý tưởng, một agency khác lo về
@@ -119,7 +101,9 @@
         <p class="text-block">Element Agency ra đời từ mong muốn tạo ra một mô hình tinh gọn và hiệu quả hơn. Chúng tôi
             tin rằng sức mạnh
             thực sự nằm ở sự kết hợp.</p>
-        <button class="contact-button">Contact us</button>
+        <a href="{{ site.baseurl }}/" class="contact-btn">
+            Contact us
+        </a>
     </section>
 
 </div>
