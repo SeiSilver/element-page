@@ -4,107 +4,124 @@
     <meta charset="UTF-8">
     <title>{{ page.title }}</title>
     {% include common-css.html %}
+    <link rel="stylesheet" href="assets/css/index.css">
 
     <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden;
-            font-family: 'Segoe UI', sans-serif;
-        }
 
-        .video-bg {
-            position: fixed;
-            top: 0;
-            left: 0;
-            min-width: 100%;
-            min-height: 100%;
-            object-fit: cover;
-            z-index: -1;
-        }
-
-        .content {
+        .why-container {
             position: relative;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            background: black url('assets/images/bg/bg1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+            padding: 30px 0;
             color: white;
             text-align: center;
-            padding: 20px;
+            font-family: Arial, sans-serif;
         }
 
-        .logo {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+        .why-we-were-born {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
         }
 
-        .logo img {
-            height: 40px;
+        .title {
+            background: black;
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 30px;
+            box-shadow: 0 0 20px #000000aa;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 30px;
         }
 
-        .nav-vertical a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.2s;
+        .why-we-were-born p {
+            line-height: 1.6;
+            font-size: 16px;
+            margin-bottom: 20px;
+            text-align: left;
         }
 
-        .nav-vertical a:hover {
-            text-decoration: underline;
-        }
-
-        .contact-btn {
-            background-color: rgba(255, 255, 255, 0.1);
-            border: 1px solid #fff;
-            color: white;
-            padding: 10px 20px;
+        .contact-button {
             margin-top: 20px;
-            border-radius: 10px;
-            transition: background-color 0.3s;
+            padding: 12px 30px;
+            background: black;
+            border: none;
+            border-radius: 15px;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            box-shadow: 0 0 10px #444;
+            cursor: pointer;
+            transition: all 0.3s ease;
         }
 
-        .contact-btn:hover {
-            background-color: rgba(255, 255, 255, 0.3);
+        .contact-button:hover {
+            background: #222;
+            box-shadow: 0 0 15px #777;
         }
 
-        .footer-text {
-            position: absolute;
-            bottom: 20px;
-            font-size: 0.9rem;
-            opacity: 0.9;
+        .text-block {
+            text-align: justify;
+            max-width: 700px;
+            font-weight: bold;
+            color: white;
         }
+
     </style>
+
 </head>
 <body data-topbar="dark" data-layout="horizontal">
 {% include header.html %}
 
-<!-- Video Background -->
-<video class="video-bg" autoplay muted loop>
-    <source src="assets/video/element.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
 
-<!-- Center Content -->
-<div class="content">
-    <div>
-        <p>Welcome to</p>
-        <h1 class="display-3 fw-bold">Element</h1>
-        <p style="max-width: 600px; margin: auto;">
-            Chúng tôi hiểu rằng việc tìm kiếm một đối tác có thể vừa đưa ra ý tưởng đột phá, vừa đảm bảo triển khai hiệu
-            quả là một thách thức.
-            Chúng tôi ở đây để giải quyết điều đó.
-        </p>
-        <a href="#contact" class="contact-btn">Contact us</a>
-    </div>
+<!-- Video section with 600px height -->
+<div class="video-container">
+    <video class="video-bg" autoplay muted loop playsinline>
+        <source src="assets/video/element.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 
-    <div class="footer-text text-white">ELEMENT CONSULTANT & COMMUNICATION CO., LTD</div>
+    <!-- Hero content centered in the video -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <p style="font-size: 18px; font-weight: 700">Welcome to</p>
+            <div class="hero-title-wrapper">
+                <img class="hero-title" src="assets/images/logo-text-white.png" alt="Element">
+            </div>
+
+            <p class="hero-description">
+                Chúng tôi hiểu rằng việc tìm kiếm một đối tác có thể vừa đưa ra ý tưởng đột phá, <br>
+                vừa đảm bảo triển khai hiệu quả là một thách thức.<br>
+                Chúng tôi ở đây để giải quyết điều đó.
+            </p>
+            <a href="{{ site.baseurl }}/" class="contact-btn">
+                Contact us
+            </a>
+
+            <div class="footer-note">
+                ELEMENT CONSULTANT & COMMUNICATION CO., LTD
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="why-container">
+
+    <section class="why-we-were-born">
+        <h2 class="title">WHY WE WERE BORN</h2>
+        <p class="text-block">Năm 2024, chúng tôi nhận ra một điều quen thuộc trên thị trường: các thương hiệu thường
+            phải làm việc với
+            nhiều agency khác nhau để có một chiến dịch trọn vẹn. Một agency sáng tạo cho ý tưởng, một agency khác lo về
+            chiến lược, một bên thứ ba phụ trách triển khai. Quá trình này rời rạc và thiếu đi sự nhất quán.</p>
+        <p class="text-block">Element Agency ra đời từ mong muốn tạo ra một mô hình tinh gọn và hiệu quả hơn. Chúng tôi
+            tin rằng sức mạnh
+            thực sự nằm ở sự kết hợp.</p>
+        <button class="contact-button">Contact us</button>
+    </section>
+
 </div>
 
 </body>
