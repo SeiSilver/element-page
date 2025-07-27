@@ -1,7 +1,7 @@
 ---
 layout: default
-title: About
-permalink: /about/
+title: Our Services
+permalink: /service/
 ---
 
 <h2>About Us</h2>
