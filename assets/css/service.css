@@ -1,0 +1,128 @@
+body {
+    background-color: #ffffff !important;
+}
+
+.hero-section {
+    margin-top: 70px;
+    background-image: url('../images/bg/bg3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 50%;
+    min-height: 350px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* căn giữa theo chiều dọc */
+}
+
+.hero-title {
+    width: 100%;
+    color: white;
+    text-shadow: 1px 2px 5px rgba(255, 255, 255);
+}
+
+.custom-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.lg-title-white {
+    background: white;
+    display: inline-block;
+    padding: 20px 50px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.commit-container {
+    width: 80%;
+}
+
+.commit-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.commit-title-text {
+    font-size: 18px;
+    color: #000000;
+    line-height: 1.5;
+}
+
+.fire-box {
+    background-image: url('../images/element/fire.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 50%;
+    border-radius: 25px;
+    height: 240px;
+}
+
+.water-box {
+    background-image: url('../images/element/water.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 50%;
+    border-radius: 25px;
+    height: 240px;
+}
+
+.earth-box {
+    background-image: url('../images/element/earth.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 50%;
+    border-radius: 25px;
+    height: 240px;
+}
+
+.wind-box {
+    background-image: url('../images/element/wind.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 50%;
+    border-radius: 25px;
+    height: 240px;
+}
+
+.element-box-title {
+    font-weight: bold;
+    color: #ffffff;
+    padding-left: 30px;
+    font-size: 60px;
+    text-shadow: 1px 0 white, 0 1px white, -1px 0 white, 0 -1px white;
+}
+
+.element-box-item {
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.our-project-btn {
+    color: rgba(0, 0, 0, 0.6);
+    padding: 15px 40px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(3px);
+    transform: translate(0px, 0px) rotate(0deg);
+    font-family: Arial, sans-serif;
+}
+
+.our-project-btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: black;
+}
