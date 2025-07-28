@@ -1,5 +1,5 @@
 ---
 layout: default
 title: policy
-permalink: /policy
+permalink: /policy/
 ---
