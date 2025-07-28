@@ -308,6 +308,13 @@
     transform: scale(1.1);
 }
 
+.footer-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
 @media (max-width: 1200px) {
     .footer-video-container {
         height: 800px;
