@@ -30,13 +30,15 @@
                         <img src="{{ site.baseurl }}/assets/images/logo-white.png" alt="element" height="22"
                              style="height: 30px !important;">
                         &nbsp
-                        <img src="{{ site.baseurl }}/assets/images/logo-text-white.png" alt="element" style="height: 20px !important;">
+                        <img src="{{ site.baseurl }}/assets/images/logo-text-white.png" alt="element"
+                             style="height: 20px !important;">
                     </span>
                     <span class="ms-3 logo-lg">
                         <img src="{{ site.baseurl }}/assets/images/logo-white.png" alt="element" height="22"
                              style="height: 30px !important;">
                         &nbsp
-                        <img src="{{ site.baseurl }}/assets/images/logo-text-white.png" alt="element" style="height: 20px !important;">
+                        <img src="{{ site.baseurl }}/assets/images/logo-text-white.png" alt="element"
+                             style="height: 20px !important;">
                     </span>
                 </a>
             </div>
@@ -45,16 +47,18 @@
 
         <div class="navbar-center position-absolute start-50 translate-middle-x d-flex gap-2">
             <div class="dropdown d-none d-lg-inline-block ms-1">
-                <button type="button" class="btn header-item waves-effect">
+                <button type="button" class="btn header-item waves-effect"
+                        onclick="window.location.href='{{ site.baseurl }}/'">
                     <a href="{{ site.baseurl }}/" class="text-white text-decoration-none">
-                        <span class="page-trigger" style="font-size: 20px; font-style: inherit">Home</span>
+                        <span id="home-nav" style="font-size: 20px; font-style: inherit">Home</span>
                     </a>
                 </button>
             </div>
             <div class="dropdown d-none d-lg-inline-block ms-1">
-                <button type="button" class="btn header-item waves-effect">
+                <button type="button" class="btn header-item waves-effect"
+                        onclick="window.location.href='{{ site.baseurl }}/service/'">
                     <a href="{{ site.baseurl }}/service/" class="text-white text-decoration-none">
-                        <span style="font-size: 20px; font-style: inherit">Our Services</span>
+                        <span id="service-nav" style="font-size: 20px; font-style: inherit">Our Services</span>
                     </a>
                 </button>
             </div>
@@ -62,7 +66,7 @@
             <div class="dropdown d-none d-lg-inline-block">
                 <button type="button" class="btn header-item waves-effect"
                         data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span style="font-size: 20px; font-style: inherit">Our Projects</span>
+                    <span id="project-nav" style="font-size: 20px; font-style: inherit">Our Projects</span>
                 </button>
                 <div class="dropdown-menu dropdown-menu-end">
                     <a class="dropdown-item text-white" href="{{ site.baseurl }}/project/#IMC-Campaign">IMC Campaign</a>
@@ -71,9 +75,10 @@
                 </div>
             </div>
             <div class="dropdown d-none d-lg-inline-block ms-1">
-                <button type="button" class="btn header-item waves-effect">
+                <button type="button" class="btn header-item waves-effect"
+                        onclick="window.location.href='{{ site.baseurl }}/contact/'">
                     <a href="{{ site.baseurl }}/contact/" class="text-white text-decoration-none">
-                        <span style="font-size: 20px; font-style: inherit">Contact</span>
+                        <span id="contact-nav" style="font-size: 20px; font-style: inherit">Contact</span>
                     </a>
                 </button>
             </div>
@@ -89,6 +94,7 @@
 
     </div>
 
+    <!-- nav mobile -->
     <nav class="d-lg-none">
         <div class="collapse navbar-collapse" id="topnav-menu-content">
             <ul class="navbar-nav">

@@ -19,6 +19,15 @@
 
 {% include common-js.html %}
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const activeNav = document.getElementById('service-nav');
+        if (activeNav) {
+            activeNav.classList.add('page-trigger');
+        }
+    });
+</script>
+
 </html>
 
 
