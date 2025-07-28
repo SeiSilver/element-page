@@ -226,3 +226,34 @@
     position: absolute;
     transform: translate(-50%, -20%);
 }
+
+.stats-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+
+.stat-button {
+    background-color: rgba(67, 114, 188, 0.6);
+    border: none;
+    color: white;
+    width: 180px;
+    border-radius: 25px;
+    padding: 20px 25px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.partner-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: contain;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.partner-logo:hover {
+    transform: scale(1.1);
+}

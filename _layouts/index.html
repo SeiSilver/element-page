@@ -5,38 +5,72 @@
     <title>{{ page.title }}</title>
     {% include common-css.html %}
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
 
-        .stats-title {
-            font-size: 3rem;
-            font-weight: bold;
-            color: white;
+        .footer-video-container {
+            position: relative;
+            height: 450px;
+            overflow: hidden;
+            display: flex;
+            align-items: center; /* Căn giữa theo chiều dọc */
+            justify-content: center; /* Căn giữa chiều ngang nếu cần */
         }
 
-        .stat-button {
-            background-color: rgba(67, 114, 188, 0.6);
-            border: none;
-            color: white;
-            width: 180px;
-            border-radius: 25px;
-            padding: 20px 25px;
-            margin-top: 10px;
-            font-weight: bold;
+        .footer-title {
+            font-size: 40px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .footer-title-sub {
             font-size: 20px;
+            color: #fff;
+            margin-top: 80px;
+            text-shadow: 1px 0 white, -1px 0 white, 0 1px white, 0 -1px white;
+
         }
 
-        .partner-logo {
-            width: 120px;
-            height: 120px;
+        .footer-section {
+            z-index: 2;
+            position: relative;
+            width: 80%;
+        }
+
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border: 2px solid white;
+            background-color: black;
             border-radius: 50%;
-            object-fit: contain;
-            padding: 10px;
-            transition: transform 0.3s ease;
+            text-align: center;
+            transition: all 0.3s ease;
+            font-size: 18px;
         }
 
-        .partner-logo:hover {
+        .social-icon:hover {
+            background-color: #fff;
+            color: #000 !important;
             transform: scale(1.1);
+        }
+
+        @media (max-width: 1200px) {
+            .footer-video-container {
+                height: 800px;
+                max-height: 800px;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .footer-video-container {
+                height: 800px;
+                max-height: 800px;
+            }
         }
 
     </style>
@@ -187,53 +221,133 @@
 
             <div class="row justify-content-center g-4">
                 <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-                    <img src="{{ site.baseurl }}/assets/images/client/viettel-money.png" alt="viettel" class="partner-logo mx-auto d-block">
+                    <img src="{{ site.baseurl }}/assets/images/client/viettel-money.png" alt="viettel"
+                         class="partner-logo mx-auto d-block">
                 </div>
                 <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-                    <img src="{{ site.baseurl }}/assets/images/client/vff.png" alt="vff" class="partner-logo mx-auto d-block">
+                    <img src="{{ site.baseurl }}/assets/images/client/vff.png" alt="vff"
+                         class="partner-logo mx-auto d-block">
                 </div>
                 <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-                    <img src="{{ site.baseurl }}/assets/images/client/yadea.jpg" alt="yadea" class="partner-logo mx-auto d-block">
+                    <img src="{{ site.baseurl }}/assets/images/client/yadea.jpg" alt="yadea"
+                         class="partner-logo mx-auto d-block">
                 </div>
                 <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-                    <img src="{{ site.baseurl }}/assets/images/client/seabank.png" alt="seabank" class="partner-logo mx-auto d-block">
+                    <img src="{{ site.baseurl }}/assets/images/client/seabank.png" alt="seabank"
+                         class="partner-logo mx-auto d-block">
                 </div>
                 <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-                    <img src="{{ site.baseurl }}/assets/images/client/pvcombank.png" alt="pvcombank" class="partner-logo mx-auto d-block">
+                    <img src="{{ site.baseurl }}/assets/images/client/pvcombank.png" alt="pvcombank"
+                         class="partner-logo mx-auto d-block">
                 </div>
                 <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-                    <img src="{{ site.baseurl }}/assets/images/client/xiaomi.png" alt="xiaomi" class="partner-logo mx-auto d-block">
+                    <img src="{{ site.baseurl }}/assets/images/client/xiaomi.png" alt="xiaomi"
+                         class="partner-logo mx-auto d-block">
                 </div>
                 <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-                    <img src="{{ site.baseurl }}/assets/images/client/vtv7.png" alt="vtv7" class="partner-logo mx-auto d-block">
+                    <img src="{{ site.baseurl }}/assets/images/client/vtv7.png" alt="vtv7"
+                         class="partner-logo mx-auto d-block">
                 </div>
                 <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-                    <img src="{{ site.baseurl }}/assets/images/client/sony-music.png" alt="sony" class="partner-logo mx-auto d-block">
+                    <img src="{{ site.baseurl }}/assets/images/client/sony-music.png" alt="sony"
+                         class="partner-logo mx-auto d-block">
                 </div>
                 <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-                    <img src="{{ site.baseurl }}/assets/images/client/toto.png" alt="toto" class="partner-logo mx-auto d-block">
+                    <img src="{{ site.baseurl }}/assets/images/client/toto.png" alt="toto"
+                         class="partner-logo mx-auto d-block">
                 </div>
                 <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-                    <img src="{{ site.baseurl }}/assets/images/client/htc-itc.png" alt="htc" class="partner-logo mx-auto d-block">
+                    <img src="{{ site.baseurl }}/assets/images/client/htc-itc.png" alt="htc"
+                         class="partner-logo mx-auto d-block">
                 </div>
                 <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-                    <img src="{{ site.baseurl }}/assets/images/client/vtv-cab-news.png" alt="vtvcab" class="partner-logo mx-auto d-block">
+                    <img src="{{ site.baseurl }}/assets/images/client/vtv-cab-news.png" alt="vtvcab"
+                         class="partner-logo mx-auto d-block">
                 </div>
                 <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-                    <img src="{{ site.baseurl }}/assets/images/client/panasonic.png" alt="panasonic" class="partner-logo mx-auto d-block">
+                    <img src="{{ site.baseurl }}/assets/images/client/panasonic.png" alt="panasonic"
+                         class="partner-logo mx-auto d-block">
                 </div>
             </div>
         </div>
 
-        <div style="margin-top: 50px">
+        <div style="margin-top: 100px; margin-bottom: 50px">
             <a href="{{ site.baseurl }}/project/" class="contact-btn">
                 Our project
             </a>
         </div>
 
+
     </section>
 
 </div>
+
+<footer class="footer-video-container position-relative text-white">
+
+    <!-- Video nền -->
+    <video class="video-bg" autoplay muted loop playsinline>
+        <source src="{{ site.baseurl }}/assets/video/flame.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="footer-section">
+        <div class="row text-center text-md-start">
+
+            <div class="col-12 col-md-12 col-lg-3 mb-5 mt-4 gy-4">
+                <img src="{{ site.baseurl }}/assets/images/logo-white.png" alt="element"
+                     style="height: 78px !important;">
+                &nbsp&nbsp
+                <img src="{{ site.baseurl }}/assets/images/logo-text-white.png" alt="element"
+                     style="height: 33px !important;">
+
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <h5 class="fw-bold footer-title">POLICY</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Terms and Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <h5 class="fw-bold footer-title">CONTACT</h5>
+                <p style="font-weight: bold">Email:
+                    <a href="mailto:agency@element-jsc.com"
+                       class="text-white text-decoration-none">agency@element-jsc.com</a>
+                </p>
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-3">
+                <h5 class="fw-bold footer-title">CONNECT</h5>
+                <div class="d-flex justify-content-center justify-content-md-start gap-3 fs-5">
+                    <a href="#" class="social-icon text-white"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon text-white"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon text-white"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row text-center mt-4">
+            <div class="col-12 col-lg-6">
+                <div class="text-center opacity-75 footer-title-sub" >
+                    ELEMENT CONSULTANT & COMMUNICATION CO., LTD
+                </div>
+            </div>
+
+            <div class="d-sm-none d-lg-block col-12 col-lg-6">
+                <div class="text-center opacity-75 footer-title-sub">
+                    <a href="mailto:agency@element-jsc.com"
+                       class="text-white text-decoration-none">agency@element-jsc.com</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</footer>
+
 
 </body>
 
