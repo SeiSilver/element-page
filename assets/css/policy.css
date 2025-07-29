@@ -1,0 +1,16 @@
+body {
+    background-color: #ffffff !important;
+}
+
+.hero-section {
+    margin-top: 70px;
+    background-image: url('../images/bg/bg6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 50%;
+    min-height: 350px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
