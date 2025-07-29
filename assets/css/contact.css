@@ -1,0 +1,77 @@
+body {
+    background-color: #ffffff !important;
+}
+
+.hero-section {
+    margin-top: 70px;
+    background-image: url('../images/bg/bg5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 50%;
+    min-height: 350px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-header {
+    background: white;
+    display: inline-block;
+    padding: 30px 100px;
+    border-radius: 50px;
+    box-shadow: 30px 30px 40px rgba(0, 0, 0, 0.3);
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+.info-line {
+    color: black;
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.info-text {
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: 15px;
+}
+
+.contact-section {
+    padding-top: 7rem !important;
+    padding-bottom: 7rem !important;
+}
+
+.outro-sub-header {
+    font-size: 30px;
+    color: black;
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.outro-header {
+    font-size: 50px;
+    color: black;
+    font-weight: 900;
+}
+
+.outro-text {
+    font-size: 20px;
+    color: black;
+    margin-top: 20px;
+    font-weight: 500;
+}
