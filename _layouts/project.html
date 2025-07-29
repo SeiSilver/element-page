@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    {% include common-css.html %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/common-style.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/project.css">
+    <style>
+
+        [id] {
+            scroll-margin-top: 120px;
+        }
+
+        .custom-card {
+            border-radius: 100px;
+            overflow: hidden;
+            padding: 20px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: unset;
+            color: white;
+            position: relative;
+        }
+
+        .image-section {
+            width: 100%;
+            display: flex;
+            justify-content: center; /* canh ngang */
+            align-items: center; /* canh dọc nếu cần */
+            padding: 20px;
+        }
+
+        .card-img {
+            border-radius: 30px;
+            max-width: 85%;
+            box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.2);
+            height: 250px;
+        }
+
+        .card-content {
+            font-size: 1rem;
+        }
+
+        .card-content strong {
+            font-weight: 700;
+        }
+
+        .row-eq-height {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .row-eq-height > [class*='col-'] {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-content {
+            position: relative;
+            z-index: 1;
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-bottom: 10px;
+        }
+
+        .card-subtitle {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-family: Arial, sans-serif;
+        }
+
+        .card-subtitle-blue {
+            color: rgb(71, 97, 182);
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-family: Arial, sans-serif;
+        }
+
+        .card-subtitle-black {
+            color: black;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-family: Arial, sans-serif;
+        }
+
+        .card-subtitle-green {
+            color: #28693d;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-family: Arial, sans-serif;
+        }
+
+        .card-cus-text {
+            font-size: 1.2rem;
+            color: #f0f0f0;
+            font-weight: 700;
+        }
+
+        .card-cus-text-black {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: black;
+        }
+
+        .card-cus-text-blue {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: rgb(71, 97, 182);
+        }
+
+        .card-cus-text-green {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #28693d;
+        }
+
+        .lg-title-white {
+            width: 400px;
+            text-align: center;
+        }
+
+
+    </style>
+
+</head>
+<body data-topbar="dark" data-layout="horizontal">
+{% include header.html %}
+<div class="custom-overlay"></div>
+
+<div class="hero-section d-flex align-items-center text-start">
+    <div class="container">
+        <div class="display-1 text-start hero-title">OUR PROJECT</div>
+    </div>
+</div>
+
+<section class="py-5">
+    <div class="container mt-4">
+        <h1 id="IMC-Campaign" class="lg-title-white">IMC CAMPAIGN</h1>
+    </div>
+    <div class="container py-5">
+        <div class="row row-eq-height g-4">
+
+            <div class="col-12 col-md-12 col-lg-6">
+                <div class="custom-card card-blue" style="background: linear-gradient(to right, #122c52, #143e40);">
+                    <div class="image-section">
+                        <img src="{{ site.baseurl }}/assets/images/project/seabank1.png" alt="Image 1" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <div>
+                            <span class="card-subtitle">Khách hàng:</span>
+                            <span class="card-subtitle">SeABank SMEs</span>
+                        </div>
+                        <div>
+                            <span class="card-subtitle">Dự án:</span>
+                            <span class="card-cus-text">Truyền thông ra mắt chính sách Loyalty KHDN</span>
+                        </div>
+                        <div>
+                            <span class="card-subtitle">Thời gian:</span>
+                            <span class="card-cus-text">1 tháng</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-6">
+                <div class="custom-card card-blue"
+                     style="background: linear-gradient(to right, #be1902, rgba(0,0,0,0.89));">
+                    <div class="image-section">
+                        <img src="{{ site.baseurl }}/assets/images/project/seabank2.png" alt="Image 1" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <div>
+                            <span class="card-subtitle">Khách hàng:</span>
+                            <span class="card-subtitle">SeABank SMEs</span>
+                        </div>
+                        <div>
+                            <span class="card-subtitle">Dự án:</span>
+                            <span class="card-cus-text">
+                                Truyền thông chương trình ưu đãi “Kết nối vươn tầm - Khởi dựng hưng thịnh" kỷ niệm SeABank 30 năm
+                            </span>
+                        </div>
+                        <div>
+                            <span class="card-subtitle">Thời gian:</span>
+                            <span class="card-cus-text">2 tháng</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row row-eq-height g-4 mt-4">
+
+            <div class="col-12 col-md-12 col-lg-6">
+                <div class="custom-card card-blue" style="background: linear-gradient(to right, #b9deff, #ededed);">
+                    <div class="image-section">
+                        <img src="{{ site.baseurl }}/assets/images/project/toto.png" alt="Image 1" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <div>
+                            <span class="card-subtitle-blue">Khách hàng:</span>
+                            <span class="card-subtitle-blue">TOTO VIETNAM</span>
+                        </div>
+                        <div>
+                            <span class="card-subtitle-blue">Dự án:</span>
+                            <span class="card-cus-text-blue">Chương trình ưu đãi mùa hè năm 2023</span>
+                        </div>
+                        <div>
+                            <span class="card-subtitle-blue">Thời gian:</span>
+                            <span class="card-cus-text-blue">4 tháng</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-6">
+                <div class="custom-card card-blue"
+                     style="background: linear-gradient(to right, #fffef4, #ff0000);">
+                    <div class="image-section">
+                        <img src="{{ site.baseurl }}/assets/images/project/viettel-money.png" alt="Image 1"
+                             class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <div>
+                            <span class="card-subtitle-black">Khách hàng:</span>
+                            <span class="card-subtitle-black">Viettel Money</span>
+                        </div>
+                        <div>
+                            <span class="card-subtitle-black">Dự án:</span>
+                            <span class="card-cus-text-black">
+                                Chuyến xe tiếp sức mùa thi
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row row-eq-height g-4 mt-4">
+
+            <div class="col-12 col-md-12 col-lg-6">
+                <div class="custom-card card-blue" style="background: linear-gradient(to right, #60b27e, #005653);">
+                    <div class="image-section">
+                        <img src="{{ site.baseurl }}/assets/images/project/YADEA.png" alt="Image 1" class="card-img"
+                             style="width: auto; height: 250px;">
+                    </div>
+                    <div class="card-content">
+                        <div>
+                            <span class="card-subtitle">Khách hàng:</span>
+                            <span class="card-subtitle">YADEA</span>
+                        </div>
+                        <div>
+                            <span class="card-subtitle">Dự án:</span>
+                            <span class="card-cus-text">Campaign đại diện di chuyển thông minh Tiến Linh</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-6">
+                <div class="custom-card card-blue"
+                     style="background: linear-gradient(to bottom, #89bcbc, #efdbd2);">
+                    <div class="image-section">
+                        <img src="{{ site.baseurl }}/assets/images/project/viettel-money.png" alt="Image 1"
+                             class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <div>
+                            <span class="card-subtitle-black">Khách hàng:</span>
+                            <span class="card-subtitle-black">Viettel Money</span>
+                        </div>
+                        <div>
+                            <span class="card-subtitle-black">Dự án:</span>
+                            <span class="card-cus-text-black">
+                                Chuyến xe tiếp sức mùa thi
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container mt-4">
+        <h1 id="Production" class="lg-title-white">PRODUCTION</h1>
+    </div>
+    <div class="container py-5">
+        <div class="row row-eq-height g-4">
+
+            <div class="col-12 col-md-12 col-lg-6">
+                <div class="custom-card card-blue"
+                     style="background: linear-gradient(to bottom, #be1902 ,#000000, #e41313);">
+                    <div class="image-section">
+                        <iframe width="406" height="228" src="https://www.youtube.com/embed/ADl-qUq-OeY"
+                                title="SEAPOWER by SeABank – CÂU LẠC BỘ ĐỘC QUYỀN NỮ CHỦ DOANH NGHIỆP" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-content">
+                        <div>
+                            <span class="card-subtitle">Khách hàng:</span>
+                            <span class="card-subtitle">SeABank SMEs</span>
+                        </div>
+                        <div>
+                            <span class="card-subtitle">Dự án:</span>
+                            <span class="card-cus-text">
+                                Truyền thông chương trình ưu đãi “Kết nối vươn tầm - Khởi dựng hưng thịnh" kỷ niệm SeABank 30 năm
+                            </span>
+                        </div>
+                        <div>
+                            <span class="card-subtitle">Thời gian:</span>
+                            <span class="card-cus-text">2 tháng</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-6">
+                <div class="custom-card card-blue"
+                     style="background: linear-gradient(to right, #353232, #979393);">
+                    <div class="image-section">
+                        <iframe width="406" height="228" src="https://www.youtube.com/embed/1C6xTtXF4dI"
+                                title="SEABANK - Kết nối giá trị cho hành trình vươn xa | TVC SME" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-content">
+                        <div>
+                            <span class="card-subtitle">Khách hàng:</span>
+                            <span class="card-subtitle">SeABank SMEs</span>
+                        </div>
+                        <div>
+                            <span class="card-subtitle">Dự án:</span>
+                            <span class="card-cus-text">
+                                Truyền thông chương trình ưu đãi “Kết nối vươn tầm - Khởi dựng hưng thịnh" kỷ niệm SeABank 30 năm
+                            </span>
+                        </div>
+                        <div>
+                            <span class="card-subtitle">Thời gian:</span>
+                            <span class="card-cus-text">2 tháng</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row row-eq-height g-4 mt-4">
+
+            <div class="col-12 col-md-12 col-lg-6">
+                <div class="custom-card card-blue" style="background: linear-gradient(to right, #b9deff, #ededed);">
+                    <div class="image-section">
+                        <iframe width="403" height="226" src="https://www.youtube.com/embed/qbJAr2ZJ_oo"
+                                title="TRỌN VẸN TỪNG KHOẢNH KHẮC GIA ĐÌNH CÙNG TOTO" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-content">
+                        <div>
+                            <span class="card-subtitle-blue">Khách hàng:</span>
+                            <span class="card-subtitle-blue">TOTO VIETNAM</span>
+                        </div>
+                        <div>
+                            <span class="card-subtitle-blue">Dự án:</span>
+                            <span class="card-cus-text-blue">Chương trình ưu đãi mùa hè năm 2023</span>
+                        </div>
+                        <div>
+                            <span class="card-subtitle-blue">Thời gian:</span>
+                            <span class="card-cus-text-blue">4 tháng</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-6">
+                <div class="custom-card card-blue" style="background: linear-gradient(to bottom, #b9deff, #ededed);">
+                    <div class="image-section">
+                        <iframe width="406" height="228" src="https://www.youtube.com/embed/WNPHds1uX_8"
+                                title="IT’S TOTO TIME - TẬN HƯỞNG NHỮNG PHÚT GIÂY THƯ GIÃN CÙNG TOTO" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-content">
+                        <div>
+                            <span class="card-subtitle-blue">Khách hàng:</span>
+                            <span class="card-subtitle-blue">TOTO VIETNAM</span>
+                        </div>
+                        <div>
+                            <span class="card-subtitle-blue">Dự án:</span>
+                            <span class="card-cus-text-blue">Chương trình ưu đãi mùa hè năm 2023</span>
+                        </div>
+                        <div>
+                            <span class="card-subtitle-blue">Thời gian:</span>
+                            <span class="card-cus-text-blue">6 tháng</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container mt-4">
+        <h1 id="Event" class="lg-title-white">EVENT</h1>
+    </div>
+
+    <div class="container py-5">
+        <div class="row row-eq-height g-4">
+
+            <div class="col-12 col-md-12 col-lg-6">
+                <div class="custom-card card-blue"
+                     style="background: linear-gradient(to right, #fffef4 ,#ff0000);">
+                    <div class="image-section">
+                        <img src="{{ site.baseurl }}/assets/images/project/seabank1.png" alt="Image 1" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <div>
+                            <span class="card-subtitle-black">Khách hàng:</span>
+                            <span class="card-subtitle-black">Viettel Money</span>
+                        </div>
+                        <div>
+                            <span class="card-subtitle-black">Sự kiện:</span>
+                            <span class="card-cus-text-black">
+                                Viettel Money Activation
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-6">
+                <div class="custom-card card-blue"
+                     style="background: linear-gradient(to bottom, #fffef4 ,#ff0000);">
+                    <div class="image-section">
+                        <img src="{{ site.baseurl }}/assets/images/project/seabank1.png" alt="Image 1" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <div>
+                            <span class="card-subtitle-black">Khách hàng:</span>
+                            <span class="card-subtitle-black">Viettel Money</span>
+                        </div>
+                        <div>
+                            <span class="card-subtitle-black">Sự kiện:</span>
+                            <span class="card-cus-text-black">
+                                Giải nhiệt mùa hè
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row row-eq-height g-4 mt-4">
+
+            <div class="col-12 col-md-12 col-lg-6">
+                <div class="custom-card card-blue" style="background: linear-gradient(to bottom, #b9deff, #ededed);">
+                    <div class="image-section">
+                        <img src="{{ site.baseurl }}/assets/images/project/seabank1.png" alt="Image 1" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <div>
+                            <span class="card-subtitle-blue">Khách hàng:</span>
+                            <span class="card-subtitle-blue">TOTO VIETNAM</span>
+                        </div>
+                        <div>
+                            <span class="card-subtitle-blue">Sự kiện:</span>
+                            <span class="card-cus-text-blue">Ra mắt sản phẩm 1H23</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-6">
+                <div class="custom-card card-blue" style="background: linear-gradient(to right, #60b27e, #ecf6f6);">
+                    <div class="image-section">
+                        <img src="{{ site.baseurl }}/assets/images/project/seabank1.png" alt="Image 1" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <div>
+                            <span class="card-subtitle-green">Khách hàng:</span>
+                            <span class="card-subtitle-green">Vinhomes</span>
+                        </div>
+                        <div>
+                            <span class="card-subtitle-green">Sự kiện:</span>
+                            <span class="card-cus-text-green">Kichoff VC Shophouse Royal Park</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% include footer.html %}
+
+</body>
+
+{% include common-js.html %}
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const activeNav = document.getElementById('service-nav');
+        if (activeNav) {
+            activeNav.classList.add('page-trigger');
+        }
+    });
+</script>
+
+</html>
+
+
