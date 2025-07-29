@@ -267,55 +267,6 @@
     justify-content: center; /* Căn giữa chiều ngang nếu cần */
 }
 
-.footer-title {
-    font-size: 40px;
-    font-weight: 700;
-    color: #fff;
-    margin-bottom: 20px;
-}
-
-.footer-title-sub {
-    font-size: 20px;
-    color: #fff;
-    margin-top: 80px;
-    text-shadow: 1px 0 white, -1px 0 white, 0 1px white, 0 -1px white;
-
-}
-
-.footer-section {
-    z-index: 2;
-    position: relative;
-    width: 80%;
-}
-
-.social-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border: 2px solid white;
-    background-color: black;
-    border-radius: 50%;
-    text-align: center;
-    transition: all 0.3s ease;
-    font-size: 18px;
-}
-
-.social-icon:hover {
-    background-color: #fff;
-    color: #000 !important;
-    transform: scale(1.1);
-}
-
-.footer-text {
-    font-size: 20px;
-    font-weight: 550;
-    color: #fff;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-}
-
 @media (max-width: 1200px) {
     .footer-video-container {
         height: 800px;
