@@ -126,6 +126,64 @@
             text-align: center;
         }
 
+        .video-container {
+            position: relative;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .video-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+
+        .overlay {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+
+        .title {
+            font-size: 5vw;
+            font-weight: bold;
+            transform: translate(0px, 0px) rotate(0deg);
+        }
+
+        .tabs-row {
+            margin-top: 40px;
+        }
+
+        .tab {
+            background: rgba(0, 0, 0, 0.13);
+            display: inline-block;
+            padding: 20px 50px;
+            border-radius: 30px;
+            box-shadow: 2px 5px 10px rgb(244, 241, 238, 0.3);
+            font-size: 22px;
+            font-weight: 900;
+            color: white;
+            margin: 10px 20px;
+            transform: translate(0px, 0px) rotate(0deg);
+            font-family: Arial, sans-serif;
+        }
+
+        .tab:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            cursor: pointer;
+        }
 
     </style>
 
@@ -426,7 +484,8 @@
                 <div class="custom-card card-blue"
                      style="background: linear-gradient(to right, #e8e7e1 ,#ff0000);">
                     <div class="image-section">
-                        <img src="{{ site.baseurl }}/assets/images/project/viettel-money1.png" alt="Image 1" class="card-img">
+                        <img src="{{ site.baseurl }}/assets/images/project/viettel-money1.png" alt="Image 1"
+                             class="card-img">
                     </div>
                     <div class="card-content">
                         <div>
@@ -513,7 +572,36 @@
 
 </section>
 
+<div class="video-container">
+    <video class="video-bg" autoplay muted loop playsinline>
+        <source src="{{ site.baseurl }}/assets/video/element.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 
+    <div class="overlay">
+        <h1 class="title text-white">OUR PORTFOLIO</h1>
+        <div class="container">
+            <div class="row justify-content-center tabs-row g-3">
+                <div class="col-12 col-md-4 tab text-center"
+                     onclick="window.open('https://drive.google.com/file/d/1Tg3WJSggkK7iG1Dky5h6lHMDXGOF-4jB/view?usp=sharing', '_blank');">
+                    <a href="https://drive.google.com/file/d/1Tg3WJSggkK7iG1Dky5h6lHMDXGOF-4jB/view?usp=sharing"
+                       target="_blank" class="text-decoration-none text-white">MAJOR PROJECT</a>
+                </div>
+                <div class="col-12 col-md-4 tab text-center"
+                     onclick="window.open('https://drive.google.com/file/d/1KclOnaVcHwovuV_tHoqE0s6dGbISNfSJ/view?usp=sharing', '_blank');">
+                    <a href="https://drive.google.com/file/d/1KclOnaVcHwovuV_tHoqE0s6dGbISNfSJ/view?usp=sharing"
+                       target="_blank" class="text-decoration-none text-white">SMES</a>
+                </div>
+                <div class="col-12 col-md-4 tab text-center"
+                     onclick="window.open('https://drive.google.com/drive/folders/1z4y4Y6-0TdS4uk07zPlUJfeLozD3JEBX?usp=sharing', '_blank');">
+                    <a href="https://drive.google.com/drive/folders/1z4y4Y6-0TdS4uk07zPlUJfeLozD3JEBX?usp=sharing"
+                       target="_blank" class="text-decoration-none text-white">OTHERS</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
 
 {% include footer.html %}
 
