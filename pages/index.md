@@ -1,5 +1,5 @@
 ---
 layout: index
-title: Element JSC Home
+title: Element Home
 permalink: /
 ---

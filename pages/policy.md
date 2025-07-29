@@ -1,5 +1,5 @@
 ---
-layout: default
-title: policy
+layout: policy
+title: Policy
 permalink: /policy/
 ---
