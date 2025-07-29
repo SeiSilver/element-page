@@ -126,3 +126,22 @@ body {
     background-color: rgba(0, 0, 0, 0.2);
     color: black;
 }
+
+@media (max-width: 1200px) {
+    .fire-box {
+        height: 400px;
+    }
+
+    .water-box {
+        height: 400px;
+    }
+
+    .earth-box {
+        height: 400px;
+    }
+
+    .wind-box {
+        height: 400px;
+    }
+
+}
