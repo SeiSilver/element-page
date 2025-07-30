@@ -24,10 +24,10 @@ email: your-email@example.com
 #  Write an awesome description for your new site here. You can edit this
 #  line in _config.yml. It will appear in your document head meta (for
 #  Google search results) and in your feed.xml site description.
-#baseurl: ""
-#url: "https://element-jsc.com/"
-#twitter_username: jekyllrb
-#github_username:  jekyll
+#baseurl: "/"
+url: "https://element-jsc.com/"
+#twitter_username: seisilver
+github_username:  seisilver
 
 # Build settings
 theme: minima
