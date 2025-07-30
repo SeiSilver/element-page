@@ -4,7 +4,7 @@
     }
 
     .page-trigger {
-        text-decoration: underline;
+        color: #3bd5e3;
     }
 
     .dropdown-menu {
@@ -18,6 +18,10 @@
 
     .dropdown-item {
         font-size: 18px !important;
+    }
+
+    .nav-font {
+        font-family: 'SpaceMono', monospace;
     }
 </style>
 
@@ -50,7 +54,7 @@
                 <button type="button" class="btn header-item waves-effect"
                         onclick="window.location.href='{{ site.baseurl }}/'">
                     <a href="{{ site.baseurl }}/" class="text-white text-decoration-none">
-                        <span id="home-nav" style="font-size: 20px; font-style: inherit">Home</span>
+                        <span id="home-nav" class="nav-font" style="font-size: 20px;">Home</span>
                     </a>
                 </button>
             </div>
@@ -58,27 +62,28 @@
                 <button type="button" class="btn header-item waves-effect"
                         onclick="window.location.href='{{ site.baseurl }}/service/'">
                     <a href="{{ site.baseurl }}/service/" class="text-white text-decoration-none">
-                        <span id="service-nav" style="font-size: 20px; font-style: inherit">Our Services</span>
+                        <span id="service-nav" class="nav-font" style="font-size: 20px;">Our Services</span>
                     </a>
                 </button>
             </div>
 
             <div class="dropdown d-none d-lg-inline-block">
-                <button type="button" class="btn header-item waves-effect"
+                <button type="button" class="btn header-item dropdown-toggle waves-effect" id="topnav-uielement" role="button"
                         data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span id="project-nav" style="font-size: 20px; font-style: inherit">Our Projects</span>
+                    <span id="project-nav" class="nav-font" style="font-size: 20px;">Our Projects</span>
                 </button>
-                <div class="dropdown-menu dropdown-menu-end">
+                <div class="dropdown-menu dropdown-menu-end px-2" aria-labelledby="topnav-uielement">
                     <a class="dropdown-item text-white" href="{{ site.baseurl }}/project/#IMC-Campaign">IMC Campaign</a>
                     <a class="dropdown-item text-white" href="{{ site.baseurl }}/project/#Production">Production</a>
                     <a class="dropdown-item text-white" href="{{ site.baseurl }}/project/#Event">Event</a>
                 </div>
             </div>
+
             <div class="dropdown d-none d-lg-inline-block ms-1">
                 <button type="button" class="btn header-item waves-effect"
                         onclick="window.location.href='{{ site.baseurl }}/contact/'">
                     <a href="{{ site.baseurl }}/contact/" class="text-white text-decoration-none">
-                        <span id="contact-nav" style="font-size: 20px; font-style: inherit">Contact</span>
+                        <span id="contact-nav" class="nav-font" style="font-size: 20px;">Contact</span>
                     </a>
                 </button>
             </div>
