@@ -33,14 +33,14 @@ body {
     font-size: 25px;
     margin-bottom: 10px;
     font-weight: bold;
-    font-family: Arial, sans-serif;
+    font-family: 'SpaceMono', sans-serif;
 }
 
 .info-text {
     font-size: 25px;
     margin-bottom: 10px;
     font-weight: normal;
-    font-family: Arial, sans-serif;
+    font-family: 'SpaceMono', sans-serif;
 }
 
 iframe {
