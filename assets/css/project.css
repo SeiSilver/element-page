@@ -42,6 +42,7 @@
 .card-img {
     border-radius: 30px;
     max-width: 85%;
+    height: 300px;
     box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -75,7 +76,7 @@
     font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 10px;
-    font-family: Arial, sans-serif;
+    font-family: 'Sansation', sans-serif;
 }
 
 .card-subtitle-blue {
@@ -83,7 +84,7 @@
     font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 10px;
-    font-family: Arial, sans-serif;
+    font-family: 'Sansation', sans-serif;
 }
 
 .card-subtitle-black {
@@ -91,7 +92,7 @@
     font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 10px;
-    font-family: Arial, sans-serif;
+    font-family: 'Sansation', sans-serif;
 }
 
 .card-subtitle-green {
@@ -99,30 +100,34 @@
     font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 10px;
-    font-family: Arial, sans-serif;
+    font-family: 'Sansation', sans-serif;
 }
 
 .card-cus-text {
     font-size: 1.2rem;
     color: #f0f0f0;
-    font-weight: 700;
+    font-weight: 500;
+    font-family: 'Sansation', sans-serif;
 }
 
 .card-cus-text-black {
     font-size: 1.2rem;
-    font-weight: 700;
     color: black;
+    font-weight: 500;
+    font-family: 'Sansation', sans-serif;
 }
 
 .card-cus-text-blue {
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 500;
+    font-family: 'Sansation', sans-serif;
     color: rgb(71, 97, 182);
 }
 
 .card-cus-text-green {
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 500;
+    font-family: 'Sansation', sans-serif;
     color: #28693d;
 }
 
@@ -181,7 +186,7 @@
     color: white;
     margin: 10px 20px;
     transform: translate(0px, 0px) rotate(0deg);
-    font-family: Arial, sans-serif;
+    font-family: 'Sansation', sans-serif;
 }
 
 .tab:hover {
