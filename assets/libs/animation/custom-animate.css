@@ -15,7 +15,6 @@
 .animate__animated {
     opacity: 0;
     visibility: hidden;
-    transform: translateX(-20px);
 }
 
 .word-fade-in {

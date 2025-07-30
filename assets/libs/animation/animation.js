@@ -1,15 +1,20 @@
 document.addEventListener('DOMContentLoaded', function () {
     const cards = document.querySelectorAll('.animate__animated');
-
+    let animationDelay = 0;
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const card = entry.target;
                 const animation = card.dataset.animation;
 
-                const index = Array.from(cards).indexOf(card);
-                const totalDelay = index * 200;
-
+                const index = Array.from(cards).indexOf(card) - animationDelay;
+                const delay = card.dataset.delay;
+                let totalDelay;
+                if (delay) {
+                    totalDelay = parseFloat(delay) * 1000;
+                } else {
+                    totalDelay = index * 250;
+                }
                 setTimeout(() => {
                     if (animation === "word-fade-in") {
                         const words = card.innerHTML.trim().split(" ");
@@ -23,7 +28,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     card.style.visibility = "visible";
                     card.style.opacity = "1";
                     observer.unobserve(card);
+                    animationDelay++;
                 }, totalDelay);
+
             }
         });
     }, {
