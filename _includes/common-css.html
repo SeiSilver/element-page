@@ -1,9 +1,10 @@
 <link rel="shortcut icon" href="{{ site.baseurl }}/assets/ico/favicon.ico">
-<link href="{{ site.baseurl }}/assets/libs/bootstrap/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
-<link href="{{ site.baseurl }}/assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+<link href="{{ site.baseurl }}/assets/libs/bootstrap/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet"
+      type="text/css"/>
+<link href="{{ site.baseurl }}/assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css"/>
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/libs/animation/animate.min.css">
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/libs/animation/custom-animate.css">
-<link href="{{ site.baseurl }}/assets/css/custom-font.css" rel="stylesheet" type="text/css" />
+<link href="{{ site.baseurl }}/assets/css/custom-font.css" rel="stylesheet" type="text/css"/>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow">
@@ -12,20 +13,29 @@
 <meta name="robots" content="index, follow">
 
 <meta property="og:title" content="{{ page.title }}">
-<meta property="og:description" content="Chúng tôi hiểu rằng việc tìm kiếm một đối tác có thể vừa đưa ra ý tưởng đột phá, vừa đảm bảo triển khai hiệu quả là một thách thức. Chúng tôi ở đây để giải quyết điều đó.">
+<meta property="og:description"
+      content="Chúng tôi hiểu rằng việc tìm kiếm một đối tác có thể vừa đưa ra ý tưởng đột phá, vừa đảm bảo triển khai hiệu quả là một thách thức. Chúng tôi ở đây để giải quyết điều đó.">
 <meta property="og:image" content="https://element-jsc.com/assets/images/bg/meta-bg.jpg">
 <meta property="og:url" content="https://element-jsc.com/">
 <meta property="og:type" content="website">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ page.title }}">
-<meta name="twitter:description" content="Chúng tôi hiểu rằng việc tìm kiếm một đối tác có thể vừa đưa ra ý tưởng đột phá, vừa đảm bảo triển khai hiệu quả là một thách thức. Chúng tôi ở đây để giải quyết điều đó.">
+<meta name="twitter:description"
+      content="Chúng tôi hiểu rằng việc tìm kiếm một đối tác có thể vừa đưa ra ý tưởng đột phá, vừa đảm bảo triển khai hiệu quả là một thách thức. Chúng tôi ở đây để giải quyết điều đó.">
 <meta name="twitter:image" content="https://element-jsc.com/assets/images/bg/meta-bg.jpg">
 
 <style>
     @media (max-width: 800px) {
         body {
-            zoom: 75%;
+            transform: scale(0.8);
+            transform-origin: top left;
+            width: 125%;
+            height: 125vh;
+            overflow-x: hidden;
+        }
+        .hero-section {
+            margin-top: 0 !important; /* Đảm bảo không có khoảng trống trên cùng */
         }
     }
 
