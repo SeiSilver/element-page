@@ -244,7 +244,7 @@
 }
 
 .stat-button {
-    background-color: rgba(67, 114, 188, 0.6);
+    background: linear-gradient(to right, #1b2735, rgba(0, 0, 0, 0.32)) !important;
     border: none;
     color: white;
     width: 180px;
