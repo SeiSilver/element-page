@@ -1,5 +1,5 @@
 ---
 layout: contact
-title: Contact
+title: Contact us | Element Agency
 permalink: /contact/
 ---

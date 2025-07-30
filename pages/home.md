@@ -1,5 +1,5 @@
 ---
 layout: index
-title: Element Home
+title: Home | Element Agency | Marketing & Communication Services
 permalink: /home/
 ---

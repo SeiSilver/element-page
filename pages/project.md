@@ -1,5 +1,5 @@
 ---
 layout: project
-title: Our Project
+title: Our Project | Element Agency
 permalink: /project/
 ---

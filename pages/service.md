@@ -1,5 +1,5 @@
 ---
 layout: service
-title: Our Services
+title: Services | Element Agency | Marketing - Event - Production
 permalink: /service/
 ---
