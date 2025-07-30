@@ -20,6 +20,14 @@
     z-index: 0;
 }
 
+.video-bg::-webkit-media-controls-start-playback-button {
+    display: none !important;
+}
+
+.video-bg::-webkit-media-controls-start-playback-button {
+    display: none !important;
+}
+
 .hero-section {
     position: absolute;
     top: 0;

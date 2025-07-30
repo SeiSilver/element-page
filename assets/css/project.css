@@ -202,3 +202,11 @@
     z-index: -1;
     clip-path: inset(200px 200px 200px 200px);
 }
+
+.video-bg::-webkit-media-controls-start-playback-button {
+    display: none !important;
+}
+
+.video-bg::-webkit-media-controls-start-playback-button {
+    display: none !important;
+}
