@@ -150,4 +150,9 @@ body {
         height: 400px;
     }
 
+    .element-box-title {
+        padding-left: 30px;
+        font-size: 40px;
+    }
+
 }
