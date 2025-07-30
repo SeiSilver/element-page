@@ -8,10 +8,29 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/contact.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/common-style.css">
 
+    <style>
+        .logo-bg-image {
+            position: absolute;
+            overflow: hidden;
+            top: 20%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+            width: 1000px;
+            height: 330vh;
+            opacity: 0.06;
+            z-index: -1;
+            clip-path: inset(300px 200px 300px 200px);
+        }
+    </style>
+
 </head>
 <body data-topbar="dark" data-layout="horizontal">
 {% include header.html %}
 <div class="custom-overlay"></div>
+
+<div>
+    <img src="{{ site.baseurl }}/assets/images/bg/bg-logo-black.png" alt="Element Logo" class="logo-bg-image">
+</div>
 
 <div class="hero-section d-flex align-items-center text-start">
     <div class="container">
@@ -49,7 +68,7 @@
     </div>
 </section>
 
-<section class="py-5 bg-white text-center">
+<section class="py-5 text-center">
     <div class="container">
         <h5 class="text-uppercase mb-3 outro-sub-header animate__animated" data-animation="animate__fadeInUp" data-delay="0.2">
             Triết lý về sự</h5>

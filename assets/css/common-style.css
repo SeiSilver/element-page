@@ -27,3 +27,9 @@
     color: black;
     font-family: Arial, sans-serif;
 }
+
+@media (max-width: 1200px) {
+    .logo-bg-image {
+        display: none;
+    }
+}
