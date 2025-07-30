@@ -303,4 +303,26 @@
         width: 100%;
     }
 
+    .hero-title-wrapper {
+        width: auto;
+    }
+
+    .hero-title {
+        max-width: 250px;
+    }
+
+    .footer-note {
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+
+    .partner-logo {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: contain;
+        padding: 10px;
+        transition: transform 0.3s ease;
+    }
+
 }
