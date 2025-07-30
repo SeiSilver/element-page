@@ -176,6 +176,7 @@
     height: 200px;
     background-size: cover;
     background-position: center;
+    margin-top: 20px;
 }
 
 .card-overlay {
@@ -279,4 +280,17 @@
         height: 800px;
         max-height: 800px;
     }
+
+    .xlg-title-black {
+        width: 300px;
+    }
+
+    .element-bg-image {
+        display: none;
+    }
+
+    .element-section {
+        width: 100%;
+    }
+
 }
