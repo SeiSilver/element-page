@@ -1,0 +1,23 @@
+.fade-word {
+    opacity: 0;
+    transform: translateX(-10px);
+    display: inline-block;
+    animation: fadeInLeft 0.5s ease-out forwards;
+}
+
+@keyframes fadeInLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate__animated {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-20px);
+}
+
+.word-fade-in {
+    transform: translateX(-10px);
+}

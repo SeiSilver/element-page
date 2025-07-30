@@ -6,7 +6,6 @@
     {% include common-css.html %}
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
 </head>
 <body data-topbar="dark" data-layout="horizontal">
@@ -20,25 +19,25 @@
 
     <section class="hero-section">
         <div class="hero-content">
-            <p style="font-size: 18px; font-weight: 700" class="word-fade-in">
+            <p style="font-size: 18px; font-weight: 700" class="animate__animated" data-animation="word-fade-in">
                 Welcome to
             </p>
-            <div class="hero-title-wrapper fade-in-up">
+            <div class="hero-title-wrapper animate__animated" data-animation="animate__fadeInUp">
                 <img class="hero-title" src="{{ site.baseurl }}/assets/images/logo-text-white.png" alt="Element">
             </div>
 
-            <p class="hero-description fade-in-up">
+            <p class="hero-description animate__animated" data-animation="animate__fadeInUp">
                 Chúng tôi hiểu rằng việc tìm kiếm một đối tác có thể vừa đưa ra ý tưởng đột phá, <br>
                 vừa đảm bảo triển khai hiệu quả là một thách thức.<br>
                 Chúng tôi ở đây để giải quyết điều đó.
             </p>
-            <div>
+            <div class="animate__animated" data-animation="animate__fadeInUp">
                 <a href="{{ site.baseurl }}/" class="contact-btn mt-4 fade-in-up">
                     Contact us
                 </a>
             </div>
 
-            <div class="footer-note word-fade-in">
+            <div class="footer-note animate__animated" data-animation="word-fade-in">
                 ELEMENT CONSULTANT & COMMUNICATION CO., LTD
             </div>
         </div>
