@@ -252,7 +252,7 @@
     height: 120px;
     border-radius: 50%;
     object-fit: contain;
-    padding: 10px;
+    padding: 5px;
     transition: transform 0.3s ease;
 }
 
@@ -308,7 +308,7 @@
     }
 
     .hero-title {
-        max-width: 250px;
+        max-width: 120px;
     }
 
     .footer-note {
@@ -317,12 +317,9 @@
     }
 
     .partner-logo {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        object-fit: contain;
-        padding: 10px;
-        transition: transform 0.3s ease;
+        width: 90px;
+        height: 90px;
+        padding: 0;
     }
 
 }
