@@ -21,7 +21,8 @@
     }
 
     .cs-nav-title {
-        font-weight: 600 !important;
+        font-weight: 400 !important;
+        font-size: 18px !important;
     }
 
 </style>
@@ -51,27 +52,29 @@
         </div>
 
         <div class="d-flex">
-            <div class="dropdown d-none d-lg-inline-block ms-1">
+            <div class="dropdown d-none d-lg-inline-block ms-4">
                 <button type="button" class="btn header-item waves-effect"
                         onclick="window.location.href='{{ site.baseurl }}/'">
                     <a href="{{ site.baseurl }}/" class="text-white text-decoration-none">
-                        <span id="home-nav" class="cs-nav-title desc-font" style="font-size: 20px;">Home</span>
+                        <span id="home-nav" class="cs-nav-title desc-font">
+                            Home
+                        </span>
                     </a>
                 </button>
             </div>
-            <div class="dropdown d-none d-lg-inline-block ms-1">
+            <div class="dropdown d-none d-lg-inline-block ms-4">
                 <button type="button" class="btn header-item waves-effect"
                         onclick="window.location.href='{{ site.baseurl }}/service/'">
                     <a href="{{ site.baseurl }}/service/" class="text-white text-decoration-none">
-                        <span id="service-nav" class="cs-nav-title desc-font" style="font-size: 20px;">Our Services</span>
+                        <span id="service-nav" class="cs-nav-title desc-font">Our Services</span>
                     </a>
                 </button>
             </div>
 
-            <div class="dropdown d-none d-lg-inline-block">
+            <div class="dropdown d-none d-lg-inline-block ms-4">
                 <button type="button" class="btn header-item dropdown-toggle waves-effect" id="topnav-project"
                         data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span id="project-nav" class="cs-nav-title desc-font" style="font-size: 20px;">Our Projects</span>
+                    <span id="project-nav" class="cs-nav-title desc-font">Our Projects</span>
                 </button>
                 <div class="dropdown-menu dropdown-menu-end px-2" aria-labelledby="topnav-project">
                     <a class="dropdown-item text-white" href="{{ site.baseurl }}/project/#IMC-Campaign">IMC Campaign</a>
@@ -80,11 +83,11 @@
                 </div>
             </div>
 
-            <div class="dropdown d-none d-lg-inline-block ms-1">
+            <div class="dropdown d-none d-lg-inline-block ms-4">
                 <button type="button" class="btn header-item waves-effect"
                         onclick="window.location.href='{{ site.baseurl }}/contact/'">
                     <a href="{{ site.baseurl }}/contact/" class="text-white text-decoration-none">
-                        <span id="contact-nav" class="cs-nav-title desc-font" style="font-size: 20px;">Contact</span>
+                        <span id="contact-nav" class="cs-nav-title desc-font">Contact</span>
                     </a>
                 </button>
             </div>
