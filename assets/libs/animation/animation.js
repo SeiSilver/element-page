@@ -2,6 +2,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const cards = document.querySelectorAll('.animate__animated');
     let animationDelay = 0;
     const observer = new IntersectionObserver(entries => {
+        if (window.suppressAnimations) {
+            return;
+        }
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const card = entry.target;
