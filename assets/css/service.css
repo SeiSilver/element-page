@@ -67,6 +67,40 @@ body {
     height: 240px;
 }
 
+.fire-box .overlay,
+.water-box .overlay,
+.earth-box .overlay,
+.wind-box .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease;
+    z-index: 1;
+    border-radius: 25px;
+}
+
+.fire-box .overlay-content,
+.water-box .overlay-content,
+.earth-box .overlay-content,
+.wind-box .overlay-content {
+    position: relative;
+    z-index: 2;
+}
+
+.fire-box:hover .overlay,
+.water-box:hover .overlay,
+.earth-box:hover .overlay,
+.wind-box:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.fire-box:hover,
+.water-box:hover,
+.earth-box:hover,
+.wind-box:hover {
+    cursor: pointer;
+}
+
 .element-box-title {
     font-weight: bold;
     color: #ffffff;
