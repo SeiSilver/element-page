@@ -68,11 +68,11 @@
             </div>
 
             <div class="dropdown d-none d-lg-inline-block">
-                <button type="button" class="btn header-item dropdown-toggle waves-effect" id="topnav-uielement" role="button"
+                <button type="button" class="btn header-item dropdown-toggle waves-effect" id="topnav-project"
                         data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span id="project-nav" class="nav-font" style="font-size: 20px;">Our Projects</span>
                 </button>
-                <div class="dropdown-menu dropdown-menu-end px-2" aria-labelledby="topnav-uielement">
+                <div class="dropdown-menu dropdown-menu-end px-2" aria-labelledby="topnav-project">
                     <a class="dropdown-item text-white" href="{{ site.baseurl }}/project/#IMC-Campaign">IMC Campaign</a>
                     <a class="dropdown-item text-white" href="{{ site.baseurl }}/project/#Production">Production</a>
                     <a class="dropdown-item text-white" href="{{ site.baseurl }}/project/#Event">Event</a>
@@ -131,3 +131,20 @@
     </nav>
 
 </header>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const projectButton = document.getElementById('topnav-project');
+
+        projectButton.addEventListener('mouseenter', function () {
+            projectButton.click();
+        });
+
+        const dropdownMenu = document.querySelector('#topnav-project + .dropdown-menu');
+        if (dropdownMenu) {
+            dropdownMenu.addEventListener('mouseleave', function () {
+                projectButton.click();
+            });
+        }
+    });
+</script>
