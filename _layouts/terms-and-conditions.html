@@ -12,6 +12,7 @@
         .content-section {
             padding: 4%;
             width: 90%;
+            text-align: justify;
         }
 
         .header-1 {
@@ -200,25 +201,10 @@
 </body>
 
 <script>
-    if (window.scrollY > 0) {
-        window.suppressAnimations = true;
-        window.scrollTo(0, 0);
-    } else {
-        window.suppressAnimations = false;
-    }
+    window.scrollTo(0, 0);
 </script>
 
 {% include common-js.html %}
-
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        if (window.suppressAnimations) {
-            setTimeout(() => {
-                window.suppressAnimations = false;
-            }, 100);
-        }
-    });
-</script>
 
 </html>
 
