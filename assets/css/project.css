@@ -36,13 +36,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
+    height: 320px;
 }
 
 .card-img {
+    height: 250px; /* optional, nếu muốn container cũng cố định */
+    max-height: 100%;
+    width: auto;
+    max-width: 90%;
     border-radius: 30px;
-    max-width: 85%;
-    height: 300px;
+    object-fit: contain;
     box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.2);
 }
 
