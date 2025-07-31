@@ -194,24 +194,3 @@
     color: white;
     cursor: pointer;
 }
-
-.logo-bg-image {
-    position: absolute;
-    overflow: hidden;
-    top: 20%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    width: 1000px;
-    height: 700vh;
-    opacity: 0.06;
-    z-index: -1;
-    clip-path: inset(200px 200px 200px 200px);
-}
-
-.video-bg::-webkit-media-controls-start-playback-button {
-    display: none !important;
-}
-
-.video-bg::-webkit-media-controls-start-playback-button {
-    display: none !important;
-}

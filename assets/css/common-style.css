@@ -29,9 +29,7 @@
 }
 
 @media (max-width: 1200px) {
-    .logo-bg-image {
-        display: none;
-    }
+
 }
 
 @media (max-width: 800px) {
